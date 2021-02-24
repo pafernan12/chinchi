@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.993, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.993, 500, 1500, "HTTP Request"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.953, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.953, 500, 1500, "HTTP Request"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 500, 0, 0.0, 237.83999999999986, 196, 1325, 218.5, 269.0, 326.9, 555.8600000000001, 12.949006811177583, 6.727413694869604, 1.8462451117499288], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["HTTP Request", 500, 0, 0.0, 237.83999999999986, 196, 1325, 218.5, 269.0, 326.9, 555.8600000000001, 12.949006811177583, 6.727413694869604, 1.8462451117499288], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 500, 0, 0.0, 351.16999999999973, 215, 2295, 260.0, 383.90000000000003, 1136.4999999999995, 2270.95, 11.663983950358086, 18.439118377773113, 1.6630289616721488], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["HTTP Request", 500, 0, 0.0, 351.16999999999973, 215, 2295, 260.0, 383.90000000000003, 1136.4999999999995, 2270.95, 11.663983950358086, 18.439118377773113, 1.6630289616721488], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
